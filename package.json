@@ -1,0 +1,12 @@
+{
+  "name": "gobble-coffee",
+  "version": "0.1.0",
+  "description": "Compile CoffeeScript files with gobble",
+  "author": "Rich Harris",
+  "keywords": [
+    "gobble"
+  ],
+  "dependencies": {
+    "coffee-script": "~1.7.1"
+  }
+}
