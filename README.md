@@ -12,6 +12,8 @@ npm i -D gobble-coffee
 
 ## Usage
 
+**gobblefile.js**
+
 ```js
 var gobble = require( 'gobble' );
 
