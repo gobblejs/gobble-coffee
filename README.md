@@ -1,6 +1,6 @@
 # gobble-coffee
 
-Compile CoffeeScript files with gobble.
+Compile CoffeeScript files with gobble. Creates sourcemaps automatically.
 
 ## Installation
 
@@ -16,28 +16,7 @@ npm i -D gobble-coffee
 
 ```js
 var gobble = require( 'gobble' );
-
-module.exports = gobble( 'src' ).map( 'coffee' );
-```
-
-## Source code
-
-```js
-module.exports = coffee;
-
-function coffee ( code, options ) {
-  if ( options.sourceMap ) {
-    console.log( 'gobble-coffee does not currently support source maps' );
-    options.sourceMap = false;
-  }
-
-  return require( 'coffee-script' ).compile( code, options );
-}
-
-coffee.defaults = {
-  accept: '.coffee',
-  ext: '.js'
-};
+module.exports = gobble( 'src' ).transform( 'coffee' );
 ```
 
 

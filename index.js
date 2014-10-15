@@ -1,12 +1,15 @@
 module.exports = coffee;
 
 function coffee ( code, options ) {
-	if ( options.sourceMap ) {
-		console.log( 'gobble-coffee does not currently support source maps' );
-		options.sourceMap = false;
-	}
+	var compiled;
 
-	return require( 'coffee-script' ).compile( code, options );
+	options.sourceMap = true;
+	compiled = require( 'coffee-script' ).compile( code, options );
+
+	return {
+		code: compiled.js,
+		map: compiled.v3SourceMap
+	};
 }
 
 coffee.defaults = {
