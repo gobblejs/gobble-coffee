@@ -3,6 +3,8 @@
   "version": "0.2.0",
   "description": "Compile CoffeeScript files with gobble",
   "author": "Rich Harris",
+  "license": "MIT",
+  "repository": "https://github.com/gobblejs/gobble-coffee",
   "keywords": [
     "gobble"
   ],
