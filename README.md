@@ -16,8 +16,10 @@ npm i -D gobble-coffee
 
 ```js
 var gobble = require( 'gobble' );
-module.exports = gobble( 'src' ).transform( 'coffee' );
+module.exports = gobble( 'src' ).transform( 'coffee', options );
 ```
+
+The `options` argument, if specified, is passed to CoffeeScript. If you *don't* want to create sourcemaps, pass `sourceMaps: false`.
 
 
 ## License
