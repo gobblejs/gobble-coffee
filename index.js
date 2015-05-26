@@ -7,7 +7,7 @@ function coffee ( code, options ) {
 	compiled = require( 'coffee-script' ).compile( code, options );
 
 	return {
-		code: compiled.js,
+		code: options.sourceMap ? compiled.js : compiled,
 		map: compiled.v3SourceMap
 	};
 }
