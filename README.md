@@ -19,7 +19,7 @@ var gobble = require( 'gobble' );
 module.exports = gobble( 'src' ).transform( 'coffee', options );
 ```
 
-The `options` argument, if specified, is passed to CoffeeScript. If you *don't* want to create sourcemaps, pass `sourceMaps: false`.
+The `options` argument, if specified, is passed to CoffeeScript. If you *don't* want to create sourcemaps, pass `sourceMap: false`.
 
 
 ## License
